@@ -9,9 +9,9 @@ const cookieParser = require("cookie-parser");
 require("../db/connection");
 const User = require("../model/userSchema");
 
-router.get("/", (req, res) => {
-  res.send("Hello world from router!");
-});
+// router.get("/", (req, res) => {
+//   res.send("Hello world from router!");
+// });
 
 router.use(cookieParser());
 
