@@ -1,5 +1,5 @@
 {
-  "name": "mern-user-profile",
+  "name": "client",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NodeEnv=Production node app.js",
     "dev": "cross-env NodeEnv=Development nodemon server/app.js",
-    "bootstrap": "npm ci && npm run front-end-build",
+    "bootstrap": "npm install && npm run front-end-build",
     "front-end-build": "cd client && npm install && npm run build",
     "front-end-build-dev": "cd client && npm run build"
   },
